@@ -1,22 +1,22 @@
 // Accessing and assigning.
 
-let firstName = "Arya";
-let lastName = "Stark";
+//let firstName = "Arya";
+//let lastName = "Stark";
 
 // Do the following:
 
 // Alert the value of the firstName.
 // Alert the value of the lastName.
-// Assign a new value of `"John"` to firstName.
-// Assign a new value of `"Snow"` to lastName.
-// Alert the new value of `firstName` and `lastName` by concatenating them
-// Create a new varaible using `const` named `fullName` and assign the fullname using firstName and lastName seperated by space.
-
+let firstName = "John";// Assign a new value of `"John"` to firstName.
+let lastName = "Snow";// Assign a new value of `"Snow"` to lastName.
+alert(firstName + " " +lastName)// Alert the new value of `firstName` and `lastName` by concatenating them
+const fullName = firstName + " " + lastName ;// Create a new varaible using `const` named `fullName` and assign the fullname using firstName and lastName seperated by space.
+alert(fullName)
 // Declare three variables `name,` `newUser` and `isAdmin`.
-// Assign your name as the value of `name`.
-// Assign the value of `name` to `newUser`.
-// Set the value of `isAdmin` to `true`.
-// Alert the values of all the three variables.
+let name = "aria" ;// Assign your name as the value of `name`.
+let newUser = name ;// Assign the value of `name` to `newUser`.
+let isAdmin = true ;// Set the value of `isAdmin` to `true`.
+alert (name +" " +newUser +" "+ isAdmin)// Alert the values of all the three variables.
 
 // Assignment and re-assignment
 
@@ -24,10 +24,11 @@ var wiseMan = "Tyrion Lannister";
 
 // Follow instructions and do the following. In case of an error write the error in comment
 
-// Reassign the value of `wiseMan` to "Samwell Tarly"
-// Declare a variable `userName` with value "Lysa Arryn"
-// Declare a variable named `oddNumber` and assign a value `57`.
-// Reassign the value of `oddNumber` to 61
+let wiseMan = "Samwell Tarly ";// Reassign the value of `wiseMan` to "Samwell Tarly"
+var userName = "Lysa Arryn";// Declare a variable `userName` with value "Lysa Arryn"
+var oddNumber = 57 ;// Declare a variable named `oddNumber` and assign a value `57`.
+let oddNumber = 61;// Reassign the value of `oddNumber` to 61
+alert(wiseMan + userName + oddNumber)
 
 // Mathematical Operation
 
