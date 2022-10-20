@@ -1,23 +1,25 @@
 // Accessing and assigning.
 
-//let firstName = "Arya";
-//let lastName = "Stark";
+let firstName = "Arya";
+let lastName = "Stark";
 
 // Do the following:
 
-// Alert the value of the firstName.
-// Alert the value of the lastName.
-let firstName = "John";// Assign a new value of `"John"` to firstName.
-let lastName = "Snow";// Assign a new value of `"Snow"` to lastName.
-alert(firstName + " " +lastName)// Alert the new value of `firstName` and `lastName` by concatenating them
+alert(firstName);// Alert the value of the firstName.
+alert(lastName);// Alert the value of the lastName.
+firstName = "John";// Assign a new value of `"John"` to firstName.
+lastName = "Snow";// Assign a new value of `"Snow"` to lastName.
+alert(firstName + " " +lastName);// Alert the new value of `firstName` and `lastName` by concatenating them
 const fullName = firstName + " " + lastName ;// Create a new varaible using `const` named `fullName` and assign the fullname using firstName and lastName seperated by space.
-alert(fullName)
+alert(fullName);
 // Declare three variables `name,` `newUser` and `isAdmin`.
-let name = "aria" ;// Assign your name as the value of `name`.
-let newUser = name ;// Assign the value of `name` to `newUser`.
-let isAdmin = true ;// Set the value of `isAdmin` to `true`.
-alert (name +" " +newUser +" "+ isAdmin)// Alert the values of all the three variables.
-
+let name, newUser, isAdmin;// Assign your name as the value of `name`.
+name = "Aria"// Assign the value of `name` to `newUser`.
+newUser = name;// Set the value of `isAdmin` to `true`.
+isAdmin = true ;
+alert (name);// Alert the values of all the three variables.
+alert (newUser);
+alert (isAdmin);
 // Assignment and re-assignment
 
 var wiseMan = "Tyrion Lannister";
@@ -28,7 +30,7 @@ let wiseMan = "Samwell Tarly ";// Reassign the value of `wiseMan` to "Samwell Ta
 var userName = "Lysa Arryn";// Declare a variable `userName` with value "Lysa Arryn"
 var oddNumber = 57 ;// Declare a variable named `oddNumber` and assign a value `57`.
 let oddNumber = 61;// Reassign the value of `oddNumber` to 61
-alert(wiseMan + userName + oddNumber)
+//alert(wiseMan + userName + oddNumber)
 
 // Mathematical Operation
 
