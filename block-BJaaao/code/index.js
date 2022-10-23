@@ -41,7 +41,9 @@ let userProfession = prompt("what is the profession ?");
 let isAdult = confirm("Are you an adult ?");
 alert("I am " +userName+ " a "+ userProfession); 
 console.log("I am "+userName+" a "+userProfession);
-alert("Username: "+userName/n+  "Adult: "+ isAdult);
+alert(`Username: ${userName}  
+Adult:  ${isAdult}
+Profession: ${userProfession}`);
 
 
 /*
