@@ -61,42 +61,42 @@ housename == "stark" ?
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
-let month = Number(prompt("Enter the no. of month"));
+let month = prompt("Enter the name of month");
 switch (month) {
-  case 1:
+  case "January":
     alert("No. of days is 31");
     break;
-  case 2:
+  case "February":
     alert("No. of days is 28");
     break;
-  case 3:
+  case "March":
     alert("No. of days is 31");
     break;
-  case 4:
+  case "April":
     alert("No. of days is 30");
     break;
-  case 5:
+  case "May":
     alert("No. of days is 31");
     break;
-  case 6:
+  case "June":
     alert("No. of days is 30");
     break;
-  case 7:
+  case "July":
     alert("No. of days is 31");
     break;
-  case 8:
+  case "August":
     alert("No. of days is 31");
     break;
-  case 9:
+  case "September":
     alert("No. of days is 30");
     break;
-  case 10:
+  case "October":
     alert("No. of days is 31");
     break;
-  case 11:
+  case "November":
     alert("No. of days is 30");
     break;
-  case 12:
+  case "December":
     alert("No. of days is 31");
     break;
   default:
@@ -168,6 +168,8 @@ switch (true) {
   case (marks>30 && marks<50):
     alert("Grade D");
     break;
+  default:
+    alert("Grade E")
 }
 
 /* 9. Weather app
