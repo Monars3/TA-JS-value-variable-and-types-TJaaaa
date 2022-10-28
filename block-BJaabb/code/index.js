@@ -28,28 +28,36 @@ alert("The sum is "+ sum)
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
 
-for (let j = 0; j <= 10; j=j+2) console.log(j);
-
+for (let j = 0; j <= 10; j=j+2) {
+    console.log(j);
+}
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
-for (let k = 10; k >= 0; k=k-1) {
+for (let k = 9; k >= 1; k--) {
     if(k%2 !== 0) {
         console.log(k, "odd")
     }
 }
 
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
-let i=5;
-while(i>0) {
-    console.log(i) ;
-    i=i-1;
+let finalString = "";
+let initialValue = 5;
+while(initialValue >= 0) {
+    finalString += initialValue;
+    initialValue--;
 }
+console.log(finalString);
 
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
-let l=10;
-while(l>0) {
-    console.log(l);
-    l=l-1;
+let finalEvenString = "";
+let initialEvenValue = 10;
+while (initialEvenValue >= 0) {
+    if (initialEvenValue % 2 === 0) { 
+    finalEvenString += initialEvenValue;
+    }
+    initialEvenValue--;
 }
+console.log(finalEvenString);
+
 // Comparisoin
 
 /* 7. Take two value using prompt and store them in variables `num1` and `num2`. Check whether they are equal or not.
@@ -61,14 +69,11 @@ Example:
 21, 21; // true
 "hello", -21; // false
 */
-let num1=prompt("Enter the first Number:");
-let num2=prompt("Enter the second Number:");
-if (num1 === num2) {
-    alert("true");
-}
-else if(num1 !== num2){
-    alert("false");
-}
-else if (num1 || num2 ==true||null||undefined){
+let num1 = +prompt("Enter the first Number:");
+let num2 = +prompt("Enter the second Number:");
+if (isNaN(num1) || isNaN(num2)) {
     alert("Enter a valid value");
+}
+else {
+    alert(num1 === num2);
 }
