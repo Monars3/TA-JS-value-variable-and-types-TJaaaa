@@ -36,19 +36,29 @@ n = 7 => output: heeeeeeello
 👇
 */
 // [Your code goes here]
-let repeat = prompt("Enter the no. of time you want 'e' to be printed");
-alert("h" + "" +"llo");
+let count = +prompt("Enter the number of e!");
+
+const start = "h";
+const end = "llo"
+
+let middle = "";
+
+for (let i=0; i<count; i++) {
+  middle += "e";
+}
+alert(start + middle + end);
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
 */
 // [Your code goes here]
-let sum = 10;
-for (i=1; i<=10; i++) {
+let max = prompt("Enter the value of n : ");
+let sum = 0;
+
+for (let i=1; i<=max; i++) {
   sum += i;
 }
-console.log(sum)
-
+alert ("The value of sum is "+ sum);
 
 
 /* Switch Statement
@@ -180,19 +190,19 @@ let number1 = +prompt("Enter 1st number: ");
 let number2 = +prompt("Enter 2nd number : ");
 let sign = prompt("Pick the option among '+' '-' '*' '/' : ");
 if (sign == "+") {
-  alert("the result is "+ (number1+number2));
+  alert("the sum of " + number1 +" and "+ number2 +" is "+ (number1+number2));
 }
 else if(sign == "-" && number1>number2) {
-  alert("the result is "+ (number1-number2));
+  alert("the sum of " + number1 +" and "+ number2 +" is "+ (number1-number2));
 }
 else if(sign == "-" && number1<number2) {
   alert("2nd no. is greater than 1st no.");
 }
 else if (sign == "*") {
-  alert("the result is "+ (number1*number2));
+  alert("the multiply of " + number1 +" and "+ number2 +" is "+ (number1*number2));
 }
 else if(sign == "/" && number1>number2) {
-  alert("the result is "+ (number1/number2));
+  alert("the division of " + number1 +" and "+ number2 +" is "+ (number1/number2));
 }
 else if(sign == "/" && number1<number2) {
   alert("2nd no. is greater than 1st no.");
